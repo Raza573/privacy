@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy – Jump &amp; Duck Runner</title>
+  <style>
+    :root { color-scheme: light dark; --bg: #f6f7fb; --fg: #1f2a44; --muted: #5b6478; --card: #fff; --accent: #ff7a3d; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #0b1020; --fg: #e8ecf5; --muted: #a3acc0; --card: #151b2e; } }
+    body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+    main { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+    .card { background: var(--card); border-radius: 16px; padding: 24px; box-shadow: 0 6px 24px rgba(0,0,0,.08); }
+    h1 { margin: 0 0 4px; font-size: 28px; }
+    h2 { margin: 28px 0 8px; font-size: 19px; }
+    .meta { color: var(--muted); margin: 0 0 16px; }
+    a { color: var(--accent); }
+    #back { display: none; margin-bottom: 14px; font-weight: 700; text-decoration: none; }
+    ul { padding-left: 22px; }
+  </style>
+</head>
+<body>
+<main>
+  <a id="back" href="#" onclick="history.back(); return false;">&larr; Back to game</a>
+  <div class="card">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Jump &amp; Duck Runner (Android package <code>com.gamestock.jumpduck</code>) by GameStock<br>Effective date: October 17, 2026</p>
+
+    <p>This policy explains what information the Jump &amp; Duck Runner app ("the app") uses and how. In short: <b>the app does not collect, store on any server, or share any personal data.</b> Everything happens on your device.</p>
+
+    <h2>Camera</h2>
+    <p>The app asks for camera permission so you can control the game with your body. When you choose "Play with Camera":</p>
+    <ul>
+      <li>Camera frames are analysed in real time <b>on your device</b> by a pose-detection model that is bundled inside the app, to detect jumps and squats.</li>
+      <li>Camera images and video are <b>never recorded, saved, uploaded or sent</b> to us or to anyone else.</li>
+      <li>No face recognition or biometric identification is performed. Only the approximate position of your shoulders is used, and only while you play.</li>
+    </ul>
+    <p>You can play without the camera using Keyboard / Touch mode, and you can revoke camera permission at any time in your device settings.</p>
+
+    <h2>Data stored on your device</h2>
+    <p>The app saves a few settings locally on your device only: your best score, your sensitivity setting and whether sound is muted. This data never leaves your device and is deleted when you uninstall the app or clear its data.</p>
+
+    <h2>Data we collect or share</h2>
+    <p>None. The app has no user accounts, no advertising, no analytics and no tracking, and it does not contain third-party SDKs that collect data. The game works fully offline and does not send data over the internet.</p>
+
+    <h2>Google Play</h2>
+    <p>If you download the app from Google Play, Google may collect information under its own privacy policy (for example, to process the installation). We do not receive personal data about you from Google.</p>
+
+    <h2>Children</h2>
+    <p>The app does not collect personal information from anyone, including children. Because camera data stays on the device and is never stored or transmitted, no personal information from children is collected.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be posted at this page with a new effective date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:{CONTACT_EMAIL}">{CONTACT_EMAIL}</a></p>
+  </div>
+</main>
+<script>
+  // show the back link only when opened from inside the game
+  if (document.referrer || history.length > 1) document.getElementById('back').style.display = 'inline-block';
+</script>
+</body>
+</html>
